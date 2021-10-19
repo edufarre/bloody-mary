@@ -48,10 +48,10 @@ $ npm install
 ## Usage
 Check that everything is properly set:
 ```bash
-$ tns doctor
+$ ns doctor
 # OR
-$ tns doctor ios # for iOS
-$ tns doctor android # for android
+$ ns doctor ios # for iOS
+$ ns doctor android # for android
 ```
 
 Use the command that suits your environment better according to the previous installation steps:
@@ -88,4 +88,17 @@ $ ns run android
 
 _Check more about [how to prepare an Android device for development here](https://docs.nativescript.org/environment-setup.html#preparing-an-android-device-1)_
 
+## Push notifications
+We use [nativescript-plugin-firebase](https://github.com/EddyVerbruggen/nativescript-plugin-firebase) for push notifications
 
+### Change plugin's config
+If trying to config again the plugin, follow the incoming steps:
+1. Access to the library folder
+```bash
+$ cs ./node_modules/@nativescript/firebase
+```
+2. Edit the current config file
+```bash
+# This will edit the firebase.nativescript.json you can find in the project's root
+$ npm run config
+```
