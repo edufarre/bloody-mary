@@ -31,13 +31,6 @@ You will need `nativescript` installed globally in your computer in order to tri
 $ npm install -g nativescript
 ```
 
-In order to check that everything is set as expected, run the following command:
-```bash
-# for iOS
-$ tns doctor ios
-# for android
-$ tns doctor android
-```
 
 Verify the installation was successful by running `ns -v` in your terminal. You should see a list of the available commands.
 
@@ -53,6 +46,14 @@ $ npm install
 ```
 
 ## Usage
+Check that everything is properly set:
+```bash
+$ tns doctor
+# OR
+$ tns doctor ios # for iOS
+$ tns doctor android # for android
+```
+
 Use the command that suits your environment better according to the previous installation steps:
 ```bash
 # Build, watch for changes and run the application
