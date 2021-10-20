@@ -133,6 +133,18 @@ Just follow the steps you can find down below and you will be ready to go:
 ```
 4. SEND
 
+
+Another option, instead of the previously suggested way, would be using the terminal.
+
+```bash
+curl \
+  --request POST \
+  --header "Authorization: key=SERVER_KEY" \
+  --header "Content-Type: application/json" \
+  --data "{\"notification\":{\"title\": \"My title\", \"text\": \"My text\"}, \"priority\": \"High\", \"to\": \"DEVICE_TOKEN\"}" \
+  https://fcm.googleapis.com/fcm/send
+```
+
 ### How I can get these two required variables?
 
 **SERVER_KEY** --> Can be found in the [Firebase console](https://console.firebase.google.com/) when creating the [Cloud Messaging](https://firebase.google.com/docs/cloud-messaging) service.
