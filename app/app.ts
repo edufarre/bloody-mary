@@ -10,6 +10,16 @@ Vue.config.silent = !__DEV__
 firebase.init({
   // Optionally pass in properties for database, authentication and cloud messaging,
   // see their respective docs.
+  showNotifications: true,
+  showNotificationsWhenInForeground: true,
+
+  onPushTokenReceivedCallback: (token) => {
+    console.log('[Firebase] onPushTokenReceivedCallback:', { token });
+  },
+
+  onMessageReceivedCallback: (message: firebase.Message) => {
+    console.log('[Firebase] onMessageReceivedCallback:', { message });
+  }
 }).then(
   () => {
     console.log("firebase.init done");
