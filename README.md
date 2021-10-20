@@ -60,7 +60,7 @@ Use the command that suits your environment better according to the previous ins
 $ ns run <platform> --bundle
 ```
 
-### Run on iOS simulator device:
+### Run on iOS:
 ```bash
 $ ns run ios
 ```
@@ -77,7 +77,7 @@ If you are already using your XCode simulator the app will automatically start o
       * File > Open simulator
 
 
-### Run on android simulator device:
+### Run on android:
 ```bash
 $ ns run android
 ```
@@ -95,7 +95,7 @@ We use [nativescript-plugin-firebase](https://github.com/EddyVerbruggen/nativesc
 If trying to config again the plugin, follow the incoming steps:
 1. Access to the library folder
 ```bash
-$ cs ./node_modules/@nativescript/firebase
+$ cd ./node_modules/@nativescript/firebase
 ```
 2. Edit the current config file
 ```bash
