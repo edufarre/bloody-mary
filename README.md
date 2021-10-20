@@ -102,3 +102,44 @@ $ cs ./node_modules/@nativescript/firebase
 # This will edit the firebase.nativescript.json you can find in the project's root
 $ npm run config
 ```
+
+### How to test push notifications
+✅ **Android** --> Currently working with the explained set up.
+
+⛔️ **iOS** --> Still needs to be configured and create the proper service on Firebase.
+
+In order to test this, a Google Play account is mandatory. We recommend using a physical mobile device is required or having a Google Play account on the Android device simulator.
+
+Testing that they work is quite straight forward, the easiest way is using a service like [Postman](https://www.postman.com/).
+
+Just follow the steps you can find down below and you will be ready to go:
+
+1. It has to be a **POST** method targeting the https://fcm.googleapis.com/fcm/send endpoint.
+2. Set the request headers:
+```
+   - Authorization: key={{SERVER_KEY}}
+   - Content-Type: application/json
+```
+3. Body: raw
+```js
+   {
+     "notification": {
+       "title": "My title",
+       "text": "My text",
+     },
+     "priority": "High",
+     "to": "{{DEVICE_TOKEN}}"
+   }
+```
+4. SEND
+
+### How I can get these two required variables?
+
+**SERVER_KEY** --> Can be found in the [Firebase console](https://console.firebase.google.com/) when creating the [Cloud Messaging](https://firebase.google.com/docs/cloud-messaging) service.
+
+**DEVICE_TOKEN** --> Will be displayed on the console triggering the project's run, because we are currently logging it into the console, and it will look like:
+```bash
+[Firebase] onPushTokenReceivedCallback: {
+   "token": {{DEVICE_TOKEN}}
+ }
+```
