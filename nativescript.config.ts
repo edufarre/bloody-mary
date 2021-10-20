@@ -1,7 +1,7 @@
 import { NativeScriptConfig } from '@nativescript/core';
 
 export default {
-  id: 'org.nativescript.bloodymary',
+  id: 'com.holaluz.bloody_mary',
   appPath: 'app',
   appResourcesPath: 'App_Resources',
   android: {

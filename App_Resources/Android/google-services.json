@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "97074007453",
+    "project_id": "bloody-mary-d97ee",
+    "storage_bucket": "bloody-mary-d97ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97074007453:android:df34ea2112e8c136db7374",
+        "android_client_info": {
+          "package_name": "com.holaluz.bloody_mary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "97074007453-urv4umsgdo2rs4hg4ervg8f56uinffuc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVALHvhM9JK58XxY1i85eJcv-LwyNGtug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "97074007453-urv4umsgdo2rs4hg4ervg8f56uinffuc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
